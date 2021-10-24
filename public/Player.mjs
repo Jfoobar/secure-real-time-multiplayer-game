@@ -68,7 +68,7 @@ export default class Player {
 calculateRank(arr) {
 
  const sorted = arr.sort((left,right)=>{
-    return left.score - right.score
+    return right.score - left.score
   })
   let myRank;
   if(this.score === 0)myRank = arr.length -1
